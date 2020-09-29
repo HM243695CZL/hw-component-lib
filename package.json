@@ -1,0 +1,66 @@
+{
+  "name": "hmczl",
+  "version": "0.1.5",
+  "description": "基于Vue的hw组件库",
+  "main": "lib/hmczl.umd.min.js",
+  "keywords": [
+    "hmczl"
+  ],
+  "author": "hm243695czl",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8083",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --dest lib packages/index.js",
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs --port 8082",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element": "^0.1.4",
+    "element-ui": "^2.13.2",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.1",
+    "schema-utils": "^2.7.0",
+    "vue": "^2.6.11",
+    "vue-charts": "^0.2.1",
+    "vue-highlight": "^0.0.0",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
